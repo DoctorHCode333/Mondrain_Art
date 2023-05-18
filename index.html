@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian-Art</title>
+  <style>
+    body{
+      background-color: #000000;
+    }
+
+    .container{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+    }
+
+    .painting{
+      display: grid;
+      height: 748px;
+      width: 748px;
+      background-color: black;
+      grid-template-columns: 320Px 198fr 153fr 50fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 9px;
+    }
+
+    .one{
+      height: 414px;
+      width: 320px;
+      background-color: #E72F24;
+    }
+
+    .two{
+      background-color: #F0F1EC;
+      grid-area: 1/2/1/5;
+    }
+
+    .three{
+      height: 296px;
+      width: 320px;
+      background-color: #F0F1EC;
+      grid-row: span 2;
+      grid-area: 2/1/4/1;
+    }
+
+    .four{
+      background-color: #F0F1EC;
+      grid-area: 2/2/4/2;
+      grid-column: span 2;
+      grid-row: span 2;
+      height: 296px;
+      width: 360px;
+    }
+
+    .five{
+      background-color: #004592;
+      grid-area: 2/4/2/5;
+      height: 130px;
+      width: 50px;
+    }
+
+    .six{
+      background-color: #F0F1EC;
+      grid-area: 4/1/4/1;
+      height: 20px;
+    }
+
+    .seven{
+      background-color: #F9D01E;
+      grid-area: 4/2/4/3;
+      height: 20px;
+      width: 198px;
+    }
+
+    .eight{
+      background-color:  #232629;
+      grid-area: 4/3/4/4;
+      height: 20px;
+      width: 153px;
+    }
+    .nine{
+      background-color:  #F0F1EC;
+      grid-area: 3/4/4/5;
+      grid-row: span 2;
+      height: 173px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="painting">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div class="five"></div>
+      <div class="six"></div>
+      <div class="seven"></div>
+      <div class="eight"></div>
+      <div class="nine"></div>
+    </div>
+  </div>
+</body>
+
+</html>
